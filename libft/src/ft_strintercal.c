@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_ls.h"
+#include "libft.h"
 
 char	*ft_strintercal(const char *s1, const char c, const char *s2)
 {

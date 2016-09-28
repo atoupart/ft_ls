@@ -46,7 +46,13 @@ SRC_NAME= ft_strnew.c ft_strlen.c\
 		  ft_atoi.c ft_itoa.c\
 		  ft_sizeint.c get_next_line.c\
 		  ft_putpoint.c\
-		  ft_gentabint.c ft_new_int2d.c ft_putint2d.c ft_free_int2d.c
+		  ft_gentabint.c ft_new_int2d.c ft_putint2d.c ft_free_int2d.c\
+		  ft_strintercal.c\
+		  ft_free_2d_size.c\
+		  ft_inittab_size_t.c\
+		  ft_strjoin_one_size.c\
+		  ft_size_t_addtab.c\
+		  ft_itoa_size_t.c
 
 
 # **************************************************************************** #

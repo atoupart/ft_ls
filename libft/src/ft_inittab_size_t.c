@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_usage.c                                      :+:      :+:    :+:   */
+/*   ft_inittab_size_t.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tifuzeau <tifuzeau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: atoupart <atoupart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/06/25 00:54:00 by tifuzeau          #+#    #+#             */
-/*   Updated: 2016/06/29 05:06:51 by tifuzeau         ###   ########.fr       */
+/*   Created: 2016/09/28 21:12:17 by atoupart          #+#    #+#             */
+/*   Updated: 2016/09/28 21:12:20 by atoupart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_ls.h"
-
-// static void	ft_putchar(char c)
-// {
-// 	write(1, &c, 1);
-// }
-
-void		print_usage(char c)
+#include "libft.h"
+ 
+void        ft_inittab_size_t(size_t *tab, size_t len)
 {
-	ft_putstr("ft_ls: illegal option -- ");
-	ft_putchar(c);
-	ft_putstr("\n");
-	ft_putstr(USAGE);
-	exit(EXIT_FAILURE);
+    while (len != 0)
+    {
+        *tab = 0;
+        tab++;
+        len--;
+    }
 }

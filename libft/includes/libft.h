@@ -115,8 +115,11 @@ char			*ft_strnstr(const char *meule, const char *aiguille, size_t n);
 char			*ft_strjoin(const char *s1, const char *s2);
 char			*ft_strjoin_free(char **as, const char *s2);
 char			*ft_strjoin_2free(char **s1, char **s2);
+char 	        *ft_strjoin_one_size(const char **str, size_t *size_max, size_t len);
+
 
 char			*ft_strsub(const char *str, unsigned int start, size_t len);
+char			*ft_strintercal(const char *s1, const char c, const char *s2);
 
 int				*ft_gentabint(const char *str, size_t *nb_nbr, int i);
 
@@ -141,6 +144,8 @@ void			*ft_memchr(const void *src, int c, size_t n);
 int				ft_atoi(const char *str);
 
 char			*ft_itoa(int n);
+char			*ft_itoa_size_t(size_t n);
+
 
 int				ft_sizeint(int n);
 
@@ -148,6 +153,11 @@ void			ft_putpoint(t_point point);
 
 t_int2d			*ft_new_int2d(size_t nb_line);
 void			ft_free_int2d(t_int2d **as);
+void 			ft_free_2d_size(char **str, size_t len);
+void  		    ft_inittab_size_t(size_t *tab, size_t len);
+size_t    		ft_size_t_addtab(const size_t *tab, size_t len);
+
+
 
 void			ft_putint2d(t_int2d *tab);
 void			ft_putint2d_debug(t_int2d *tab);

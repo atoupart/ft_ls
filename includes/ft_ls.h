@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_ls.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tifuzeau <tifuzeau@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/03/28 14:13:11 by tifuzeau          #+#    #+#             */
-/*   Updated: 2016/06/29 05:00:36 by tifuzeau         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef FT_LS_H
 # define FT_LS_H
 
@@ -70,28 +58,47 @@ typedef struct		s_2lst_info
 	struct s_2lst_info		*last;
 }					t_2lst_info;
 
-t_2lst_info			*parseur(int argc, const char *argv[]);
+
+//main.c
+int					main(int ac, const char *argv[]);
+void				ls(t_2lst_info *begin_lst);
+
+//lest_go.c
+int					lest_go(char *path);
+
+//fail.c
+void				fail(const char *str);
+
+//read_dir.c
 t_2lst_info			*read_dir(DIR *fd_dir, const char *path);
+
+//new_2lst_info.c
+t_2lst_info			*new_2lst_info(void);
+
+//del_2lst_info
+void				del_2lst_info(t_2lst_info **as);
+
+t_2lst_info			*parseur(int argc, const char *argv[]);
 
 void				print_name(t_2lst_info *lst);
 void				print_usage(char c);
-int					lest_go(char *path);
 
-void				fail(const char *str);
+
+//recursive.c
 void				recursive(char *path, t_2lst_info *begin_lst);
 void				putpath(const char *str);
 
 int					flag(const char *str);
 
+
+// print.c
 void				print(t_2lst_info *begin_lst, int bol);
 
-void				del_2lst_info(t_2lst_info **as);
 void				loop_2lst(t_2lst_info *lst);
 void				reverse_2lst(t_2lst_info **begin_lst);
-t_2lst_info			*new_2lst_info(void);
 
-void				inser(t_2lst_info **begin_lst,
-		t_2lst_info *a_placer, int(*foo)());
+
+void				inser(t_2lst_info **begin_lst, t_2lst_info *a_placer, int(*foo)());
 
 int					dir_cmp(t_2lst_info *ref, t_2lst_info *cmp);
 int					time_cmp(t_2lst_info *ref, t_2lst_info *cmp);

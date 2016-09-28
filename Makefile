@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: tifuzeau <tifuzeau@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2016/03/28 14:00:16 by tifuzeau          #+#    #+#              #
-#    Updated: 2016/06/29 05:33:03 by tifuzeau         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME	= ft_ls
 
 # **************************************************************************** #
@@ -27,13 +15,36 @@ SRC_PATH= ./src/
 
 LIB_NAME= libft
 OBJ_NAME= $(SRC_NAME:.c=.o)
-SRC_NAME= main.c fail.c flag.c lest_go.c inser.c init.c read_dir.c recursive.c \
-		  new_2lst_info.c reverse_2lst.c del_2lst_info.c loop_2lst.c \
-		  print_name.c parseur.c putpath.c print_usage.c \
-		  print_list.c make_str_list.c make_right.c make_usr_grp.c \
-		  make_oc_mi_maj.c make_time.c make_size_l.c itoa_off_t.c make_link.c \
-		  itoa_nlink_t.c make_name_link.c print_one.c print.c
-
+SRC_NAME= \
+		main.c\
+		fail.c\
+		flag.c\
+		lest_go.c\
+		inser.c\
+		init.c\
+		read_dir.c\
+		recursive.c\
+		reverse_2lst.c\
+		loop_2lst.c\
+		print_name.c\
+		parseur.c\
+		putpath.c\
+		print_usage.c\
+		print_list.c\
+		make_right.c\
+		make_usr_grp.c\
+		make_oc_mi_maj.c\
+		make_time.c\
+		make_size_l.c\
+		itoa_off_t.c\
+		make_link.c\
+		itoa_nlink_t.c\
+		make_name_link.c\
+		print_one.c\
+		print.c\
+		del_2lst_info.c\
+		new_2lst_info.c\
+		make_str_list.c
 # **************************************************************************** #
 #									VAR                                        #
 # **************************************************************************** #
